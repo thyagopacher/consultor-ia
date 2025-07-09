@@ -1,0 +1,7 @@
+{
+  "name": "consultor-ia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

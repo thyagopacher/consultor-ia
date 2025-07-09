@@ -1,0 +1,18 @@
+<ion-header><ion-toolbar><ion-title>Consultor IA</ion-title></ion-toolbar></ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input [(ngModel)]="area" placeholder="Área de atuação (ex: saúde)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea [(ngModel)]="pergunta" placeholder="Escreva sua pergunta"></ion-textarea>
+  </ion-item>
+
+  <ion-button expand="block" (click)="consultar()">Consultar</ion-button>
+
+  <div *ngIf="resposta">
+    <h3>Resposta:</h3>
+    <p>{{ resposta }}</p>
+  </div>
+</ion-content>
